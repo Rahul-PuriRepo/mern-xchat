@@ -120,7 +120,9 @@ User search UI
 Sending messages
 Message persistence
 Receiving messages after login
+
 📁 Project Structure
+```
 ME_MERN_XCHAT/
 │
 ├── assessment/
@@ -145,7 +147,7 @@ ME_MERN_XCHAT/
 ├── cypress.config.js
 ├── .gitignore
 └── README.md
-
+```
 
 ⚙️ Running Locally
 1. Clone the repository
