@@ -2,6 +2,21 @@
 
 A full-stack real-time chat application built with the **MERN stack**, **Firebase Realtime Database**, and **JWT authentication**.
 
+## Live Deployment
+
+- **Frontend:** https://mern-xchat-zeta.vercel.app
+- **Backend API:** https://mern-xchat-06vr.onrender.com
+- **GitHub Repository:** https://github.com/Rahul-PuriRepo/mern-xchat
+
+  ### Production Stack
+
+- Frontend: React + Vite + Vercel
+- Backend: Node.js + Express + Render
+- Database: MongoDB Atlas
+- Authentication: JWT + HTTP-only cookies
+- Real-time messaging: Firebase Realtime Database
+- 
+
 ## 🚀 Features
 
 - User registration and login
