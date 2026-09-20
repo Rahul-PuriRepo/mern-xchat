@@ -60,7 +60,7 @@ React
 Firebase Realtime Database
      ├── messages/{roomId}
      └── typing/{roomId}/{userId}
-
+```
 🔐 Authentication
 
 Authentication is handled using JWT tokens stored in an HTTP-only cookie.
