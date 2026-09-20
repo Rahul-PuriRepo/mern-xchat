@@ -131,6 +131,7 @@ The project includes Cypress end-to-end tests covering both backend and frontend
 - Message persistence
 - Receiving messages after login
 - Logout functionality
+
 📁 Project Structure
 ```
 ME_MERN_XCHAT/
