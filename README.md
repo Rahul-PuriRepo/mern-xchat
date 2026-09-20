@@ -95,32 +95,42 @@ typing/{roomId}/{userId}
 ```
 Firebase listeners allow messages and typing status to update in real time without refreshing the page.
 
-🧪 Testing
+## 🧪 Testing
 
 The project includes Cypress end-to-end tests covering both backend and frontend functionality.
 
-Test Results
-Backend: 8/8 passing
-Frontend: 14/14 passing
-Total: 22/22 passing ✅
+### Test Results
 
-The tests cover:
+| Test Suite | Result |
+|---|---:|
+| Backend | **8/8 passing** ✅ |
+| Frontend | **14/14 passing** ✅ |
+| **Total** | **22/22 passing** ✅ |
 
-Registration
-Duplicate registration
-Login
-Invalid credentials
-Profile retrieval
-User search
-Chat-room initialization
-Chat-room retrieval
-Logout
-Chat layout
-User search UI
-Sending messages
-Message persistence
-Receiving messages after login
+### Test Coverage
 
+#### Backend
+
+- User registration
+- Duplicate registration handling
+- User login
+- Invalid credentials
+- Profile retrieval
+- User search
+- Chat-room initialization
+- Chat-room retrieval
+- Logout and authentication handling
+
+#### Frontend
+
+- Authentication flow
+- Chat layout
+- User search UI
+- Starting a chat
+- Sending messages
+- Message persistence
+- Receiving messages after login
+- Logout functionality
 📁 Project Structure
 ```
 ME_MERN_XCHAT/
