@@ -90,7 +90,7 @@ const loginUser = async (req, res) => {
       { expiresIn: "1d" }
     );
 
-    res.cookie("accessToken", token, {
+    res.cookie("accessToken", accessToken, {
       httpOnly: true,
       sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
       secure: process.env.NODE_ENV === "production",
