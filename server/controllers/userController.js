@@ -90,10 +90,10 @@ const loginUser = async (req, res) => {
       { expiresIn: "1d" }
     );
 
-    res.cookie("accessToken", accessToken, {
+    res.cookie("accessToken", token, {
       httpOnly: true,
-      sameSite: "lax",
-      secure: false,
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      secure: process.env.NODE_ENV === "production",
       maxAge: 24 * 60 * 60 * 1000,
     });
 
@@ -194,9 +194,9 @@ const searchUsers = async (req, res) => {
 
 const logoutUser = (req, res) => {
   res.clearCookie("accessToken", {
-    httpOnly: true,
-    sameSite: "lax",
-    secure: false,
+      httpOnly: true,
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      secure: process.env.NODE_ENV === "production",
   });
 
   return res.status(200).json({
